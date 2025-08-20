@@ -9,3 +9,6 @@ Fetches users from `https://jsonplaceholder.typicode.com/users`, transforms to:
 npm install
 npm run fetch-users
 # output: users.json
+npm run to-db
+npx prisma studio
+# optional: inspect data via Prisma Studio

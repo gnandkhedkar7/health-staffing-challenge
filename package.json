@@ -5,17 +5,20 @@
   "scripts": {
     "build": "tsc -p .",
     "fetch-users": "ts-node src/fetchUsers.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "to-db": "ts-node src/fetchUsersToDb.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@prisma/client": "^6.14.0",
     "axios": "^1.11.0"
   },
   "devDependencies": {
     "@types/node": "^24.3.0",
+    "prisma": "^6.14.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
   }
