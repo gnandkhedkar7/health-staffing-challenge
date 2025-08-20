@@ -55,7 +55,7 @@ async function main() {
         console.error("Error:", err instanceof Error ? err.message : String(err));
         process.exit(1);
     } finally {
-        console.timeEnd("fetch-users")
+        console.timeEnd("fetch-users");
     }
 }
 
