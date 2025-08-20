@@ -11,8 +11,25 @@ datasource db {
 }
 
 model TransformedUser {
-  id    Int @id
-  name  String
-  email String @unique
-  company String    
+  id           Int           @id
+  name         String
+  email        String        @unique
+  company      String
+  appointments Appointment[]
+}
+
+model Appointment {
+  id          Int             @id @default(autoincrement())
+  date        DateTime
+  description String
+  user        TransformedUser @relation(fields: [userId], references: [id])
+  userId      Int
+  status      AppointmentStatus @default(PENDING)
+}
+
+enum AppointmentStatus {
+  PENDING
+  CONFIRMED
+  COMPLETED
+  CANCELED
 }

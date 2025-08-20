@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "userId": 3,
+    "date": "2025-08-21T10:00:00Z",
+    "description": "General Checkup"
+  },
+  {
+    "id": 2,
+    "userId": 1,
+    "date": "2025-08-22T15:30:00Z",
+    "description": "Follow-up Visit"
+  }
+]

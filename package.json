@@ -6,7 +6,9 @@
     "build": "tsc -p .",
     "fetch-users": "ts-node src/fetchUsers.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "to-db": "ts-node src/fetchUsersToDb.ts"
+    "to-db": "ts-node src/fetchUsersToDb.ts",
+    "fetch-appointments": "ts-node src/fetchAppointmentsToDb.ts",
+     "dev": "ts-node src/server.ts"
   },
   "keywords": [],
   "author": "",
@@ -14,9 +16,13 @@
   "description": "",
   "dependencies": {
     "@prisma/client": "^6.14.0",
-    "axios": "^1.11.0"
+    "axios": "^1.11.0",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
   },
   "devDependencies": {
+    "@types/express": "^5.0.3",
     "@types/node": "^24.3.0",
     "prisma": "^6.14.0",
     "ts-node": "^10.9.2",
